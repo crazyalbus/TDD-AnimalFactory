@@ -15,14 +15,11 @@ public class CatMammalInheritanceTest {
         String testCatName = "Fitz";
         Date testCatBirthday = new Date();
         Integer testCatId = 123;
-        Boolean expectedMammalInheritance = true;
-
 
         //When
         Cat testCat = new Cat(testCatName, testCatBirthday, testCatId);
-        Boolean actualAnimalInheritance = (testCat instanceof Mammal);
 
         //Then
-        Assert.assertEquals(expectedMammalInheritance, actualAnimalInheritance);
+        Assert.assertTrue(testCat instanceof Mammal);
     }
 }
