@@ -11,4 +11,6 @@ public interface Animal {
     Integer getId();
     void eat(Food food);
 
+
+
 }
